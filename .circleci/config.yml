@@ -1,0 +1,9 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: cimg/php:7.4.6
+    steps:
+      - checkout
+      - run: php index.php    
